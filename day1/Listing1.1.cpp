@@ -4,9 +4,9 @@
  *    Created on: 16 Nov 2012
  *      Author: hp
 */
+/*
 
-
-#include <iostream>		// # tells the preprocessor to act on this lines
+#include<iostream>		// # tells the preprocessor to act on this lines
 						//  before compiling the code.
 						// include tells the processor to find a file with
 						// the following name and read it in right here.
@@ -18,3 +18,4 @@ int main()
 	return 0;
 }
 
+*/
