@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {
 	int localVariable = 5;			// a variable
-	int *pLocal = &localVariable;	//	a pointer to a variable
+	int * pLocal = &localVariable;	//	a pointer to a variable
 	int * pHeap = new int(7);			//	a pointer to the free store with a default value
 	if(pHeap == NULL)
 	{
