@@ -16,7 +16,7 @@ int main()
 	int localVariable = 5;			// a variable
 	int * pLocal = &localVariable;	//	a pointer to a variable
 	int * pHeap = new int(7);			//	a pointer to the free store with a default value
-	if(pHeap == NULL)
+	if(!pHeap)
 	{
 		cout<<"Error! No memory for pHeap!!";
 		return 0;
@@ -28,7 +28,7 @@ int main()
 	delete pHeap;
 	pHeap = 0;
 	pHeap = new int(9);
-	if(pHeap == NULL)
+	if(!pHeap)
 	{
 		cout<<"Error! No memory for pHEAP!!";
 		return 0;
