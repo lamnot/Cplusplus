@@ -28,19 +28,19 @@ SimpleCat::SimpleCat(int age, int weight):
 itsAge(age), itsWeight(weight){}
 
 //Programme function declarations
-SimpleCat & TheFunction();
+SimpleCat & rTheFunction();
 
 // Main programme functions
 int main()
 {
-	SimpleCat & rCat = TheFunction();
+	SimpleCat & rCat = rTheFunction();
 	int age = rCat.GetAge();
 	int weight = rCat.GetWeight();
 	cout<<"rCat is: " <<age <<" years old and weighs "<<weight <<" kgs\n";
 	return 0;
 }
 
-SimpleCat & TheFunction()
+SimpleCat & rTheFunction()
 {
 	SimpleCat Frisky(5,9);
 	return Frisky;

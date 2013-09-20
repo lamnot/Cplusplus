@@ -31,7 +31,7 @@ SimpleCat::~SimpleCat()
 }
 
 SimpleCat FunctionOne(SimpleCat theCat);
-SimpleCat* FunctionTwo(SimpleCat *theCat);
+SimpleCat* pFunctionTwo(SimpleCat * ptheCat);
 
 int main()
 {
@@ -40,21 +40,22 @@ int main()
 	cout<<"Calling FunctionOne\n";
 	FunctionOne(Frisky);
 	cout<<"Calling FunctionTwo\n";
-	FunctionTwo(& Frisky);
+	pFunctionTwo(& Frisky);
 
 	return 0;
 }
 
 // FunctioOne passes by value
-SimpleCat FunctionOne(SimpleCat theCat)
+SimpleCat FunctionOne(SimpleCat ptheCat)
 {
 	cout<<"Function One. Returning...\n";
-	return theCat;
+	return ptheCat;
 }
 // FunctionTwo passes by reference
-SimpleCat* FunctionTwo(SimpleCat *theCat)
+SimpleCat * pFunctionTwo(SimpleCat * ptheCat)
 {
 	cout<<"Function Two. Returning...\n";
-	return theCat;
+	return ptheCat;
 }
+
 */

@@ -40,7 +40,7 @@ SimpleCat::~SimpleCat()
 }
 
 // Programme Function declarations
-const SimpleCat * const FunctionTwo(const SimpleCat * const theCat);
+const SimpleCat * const pFunctionTwo(const SimpleCat * const ptheCat);
 
 int main()
 {
@@ -51,7 +51,7 @@ int main()
 	Frisky.SetAge(age);
 	cout<<"Frisky is " <<Frisky.GetAge() <<" years old\n";
 	cout<<"Calling FunctionTwo...\n";
-	FunctionTwo(&Frisky);
+	pFunctionTwo(&Frisky);
 	cout<<"Frisky is " <<Frisky.GetAge() <<" years old\n";
 
 	return 0;
@@ -59,12 +59,12 @@ int main()
 
 // Main Function definitions
 // FunctionTwo passes a const pointer
-const SimpleCat * const FunctionTwo(const SimpleCat * const theCat)
+const SimpleCat * const pFunctionTwo(const SimpleCat * const ptheCat)
 {
 	cout<<"Function two. Returning...\n";
-	cout<<"Frisky is now " <<theCat->GetAge() <<" years old.\n";
+	cout<<"Frisky is now " <<ptheCat->GetAge() <<" years old.\n";
 	// theCat->SetAge(8); //const!
-	return theCat;
+	return ptheCat;
 }
 
 */

@@ -42,7 +42,7 @@ SimpleCat::~SimpleCat()
 }
 
 // Programme function declarations
-const SimpleCat & FunctionTwo(const SimpleCat & theCat);
+const SimpleCat & rFunctionTwo(const SimpleCat & rtheCat);
 
 // Main programme function
 int main()
@@ -54,18 +54,18 @@ int main()
 	Frisky.SetAge(age);
 	cout<<"Frisky is " <<Frisky.GetAge() <<" years old.\n";
 	cout<<"Calling FunctionTwo...\n";
-	FunctionTwo(Frisky);
+	rFunctionTwo(Frisky);
 	cout<<"Frisky is " <<Frisky.GetAge() <<" years old.\n";
 
 	return 0;
 }
 // Programme function definitions
 // FunctionTwo passes a ref to a const object
-const SimpleCat & FunctionTwo(const SimpleCat & theCat)
+const SimpleCat & rFunctionTwo(const SimpleCat & rtheCat)
 {
 	cout<<"FunctionTwo. Returning...\n";
-	cout<<"Frisky is now " <<theCat.GetAge() <<" years old.\n";
+	cout<<"Frisky is now " <<rtheCat.GetAge() <<" years old.\n";
 	// theCat.SetAge(8); const!
-	return theCat;
+	return rtheCat;
 }
 */
