@@ -5,9 +5,9 @@
  *  Created on: 1 Sep 2014
  *      Author: cohabo
  */
-
-// Headers and Includes
 /*
+// Headers and Includes
+
 #include<iostream>
 using namespace std;
 
@@ -26,7 +26,7 @@ int main()
 		cin >>myArray[i];
 	}
 	for( i=0; i<5; i++ )
-		cout <<i <<": " << myArray[i] <<endl;
+5		cout <<i <<": " << myArray[i] <<endl;
 	return 0;
 }
 

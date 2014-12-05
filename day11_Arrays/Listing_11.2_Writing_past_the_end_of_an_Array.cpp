@@ -1,13 +1,13 @@
 /*
  * Listing_11.2.cpp
- * DEmonstrates what happens when you write past the end of an array
+ * Demonstrates what happens when you write past the end of an array
  *
  *  Created on: 1 Sep 2014
  *      Author: cohabo
  */
-
-// Headers and Includes
 /*
+// Headers and Includes
+
 #include<iostream>
 using namespace std;
 
@@ -54,8 +54,10 @@ int main()
 	cout << "\n\nsentinelOne[" <<i <<"]:  " << &sentinelOne[i] <<"\n";
 	cout << "targetArray[24]: " <<&TargetArray[24] <<"\n";
 	cout << "sentinelTwo[" <<i <<"]:  " << &sentinelTwo[i] <<"\n";
+	
 
 	return 0;
+	
 }
 
 */

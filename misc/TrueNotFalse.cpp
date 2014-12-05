@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
 	int error;
-	error = 0;
+	error = 1;
 
 	if(!error)
 	{
@@ -21,7 +21,8 @@ int main()
 		cout<<"Is False, (!" <<error <<") statement cannot be True.\n";
 	return 0;
 }
-
-
-
 */
+
+
+
+

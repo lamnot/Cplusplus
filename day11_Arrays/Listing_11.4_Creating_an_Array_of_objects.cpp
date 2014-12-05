@@ -42,8 +42,8 @@ CAT::CAT()
 // Main Program
 int main()
 {
-	CAT Litter[5];
-	int i;
+	CAT Litter[5];			// To access the member data in an array of objects; first identify the object using the 
+	int i;					// index ([]) operator and then call the member (.) operator on the object.
 
 	for( i=0; i<5; i++ )
 		Litter[i].SetWeight( 2 * i + 1 );

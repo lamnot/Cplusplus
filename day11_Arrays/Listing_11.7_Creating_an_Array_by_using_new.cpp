@@ -39,15 +39,23 @@ CAT::~CAT()
 int main()
 {
 	CAT * Family = new CAT[10];
+	while(!Family) {
+		cout << "Error! No memory for Family.";
+		return 0;
+	}
 	int i;
-	CAT * pCat;
+	CAT * pCAT;
 
 	for( i=0; i<10; i++ )
 	{
-		pCat = new CAT;
-		pCat->SetAge( 2 * i + 1);
-		Family[i] = *pCat;
-		delete pCat;
+		pCAT = new CAT;
+		while(!pCAT) {
+			cout << "Error! No memory for pCAT.";
+			return 0;
+		}
+		pCAT->SetAge( 2 * i + 1);
+		Family[i] = *pCAT;
+		delete pCAT;
 	}
 
 	for( i=0; i<10; i++ )

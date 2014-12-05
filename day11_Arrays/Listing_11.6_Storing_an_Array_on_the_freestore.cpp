@@ -44,8 +44,13 @@ int main()
 	for( i=0; i<500; i++ )
 	{
 		pCAT = new CAT;
-		pCAT->SetAge( 2 * i + 1 );
+		if(!pCAT) {
+			cout << "ERROR! No memory for pCAT!!";
+			return 0;
+		} 
+		else { pCAT->SetAge( 2 * i + 1 );
 		Family[i] = pCAT;
+		}
 	}
 
 	for( i=0; i<500; i++ )
